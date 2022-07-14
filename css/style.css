@@ -3,8 +3,30 @@
 /*******************************************/
 
 /* Box Model Hack */
+
+@font-face{
+	font-family: Calculator;
+	src: url(fonts/digital.ttf);
+}
+
 *{
   box-sizing: border-box;
+}
+
+body.body {
+  padding: 100px;
+  background: darkslategray;
+  font-family: 'Calculator', sans-serif;
+  text-align: center;
+
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em auto;
+  border: 2px solid greenyellow;
+  width: 270px;
+  color: cornsilk;
 }
 
 button {
@@ -15,6 +37,11 @@ button {
   border: none;
   display: flex;
   justify-content: space-evenly;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 0px 0px #222121, inset -1px -3px 10px 1px #999999;
+  margin:2px;
 }
 
 div {
@@ -24,7 +51,9 @@ div {
 
 
 .output {
-  background: lightgray;
+  padding: .2em;
+  background: #dbd5bd;
+  border: 5px solid #c3c2ab;
   border-radius: 0;
   font-size: 2em;
   height: 3em;
@@ -32,6 +61,7 @@ div {
   align-items: flex-end;
   justify-content: space-evenly;
   flex-direction: column;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .buttons {
@@ -39,10 +69,14 @@ div {
   display: flex;
   justify-content: space-around;
   padding: 1em;
+  border-radius: 0px 0px 15px 15px;
+  background: #edeade;
 }
 
 .calculator-grid {
-    width: 250px;
+    margin: auto;
+    width: 300px;
+    border-radius: 15px;
 }
 
 .calculator-grid > button {
@@ -51,6 +85,19 @@ div {
 
 .buttons > button:hover {
   background-color:lightgray
+}
+
+span#placeToPutResult {
+  font-size: 45px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+span#placeToPutEquation {
+  font-size: 23px;
+  word-wrap: break-word;
+  word-break: break-all;
+
 }
 
 /******************************************
