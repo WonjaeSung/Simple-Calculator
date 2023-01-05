@@ -29,7 +29,39 @@ h1 {
   color: cornsilk;
 }
 
+.buttons {
+  background: #edeade;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+/* #eight {
+  grid-column: 1;
+  grid-row: 1;
+}
+#nine {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#divide {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+} */
+
 button {
+  font-size: 50px;
+  border: dotted 1px;
+}
+/* button {
   border-radius: 50px;
   font-size: 35px;
   height: 50px;
@@ -42,6 +74,20 @@ button {
   border-radius: 10px;
   box-shadow: 0px 2px 0px 0px #222121, inset -1px -3px 10px 1px #999999;
   margin:2px;
+} */
+
+#equals {
+  grid-column: 4;
+  grid-row: 4/6;
+  border-bottom-right-radius: 15px;
+}
+
+#modulus {
+  border-bottom-left-radius: 15px;
+}
+
+#power {
+  background: #fda8a8;
 }
 
 div {
@@ -64,14 +110,6 @@ div {
   border-radius: 15px 15px 0px 0px;
 }
 
-.buttons {
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-around;
-  padding: 1em;
-  border-radius: 0px 0px 15px 15px;
-  background: #edeade;
-}
 
 .calculator-grid {
     margin: auto;

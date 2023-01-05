@@ -1,51 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
-		
 
-		<title>Calculator</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel = "icon" href = "images/favicon-hashtag.JPG" type = "image/x-icon">
-	</head>
-	<body class="body">
-		<h1>crimpycode 10-key</h1>
-		<div class='calculator-grid'>
-			<div class="output">
-				<span id="placeToPutEquation">0</span>
-				<span id="placeToPutResult">0</span>
-			</div>
-			
-			<div class="buttons">
-				<button id='seven'>7</button>
-				<button id='eight'>8</button>
-				<button id='nine'>9</button>
-				<button id='divide'>/</button>
-				<button id='four'>4</button>
-				<button id='five'>5</button>
-				<button id='six'>6</button>
-				<button id='multiply'>*</button>
-				<button id='one'>1</button>
-				<button id='two'>2</button>
-				<button id='three'>3</button>
-				<button id='plus'>+</button>
-				<button id='decimal'>.</button>
-				<button id='zero'>0</button>
-				<button id='equals'>=</button>
-				<button id='minus'>-</button>
-			</div>
+	<title>Calculator</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@400;600&display=swap"
+		rel="stylesheet">
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/favicon-hashtag.JPG" type="image/x-icon">
+</head>
+
+<body class="body">
+	<h1>crimpycode 10-key</h1>
+	<div class='calculator-grid'>
+		<div class="output">
+			<span id="placeToPutEquation">0</span>
+			<span id="placeToPutResult">0</span>
 		</div>
-		
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+		<div id="container" class="buttons">
+			<button id='power'>AC</button>
+			<button id='divide'>/</button>
+			<button id='multiply'>*</button>
+			<!-- &lt; is < (less than) -->
+			<button id='delete'>&lt;</button>
+			<button id='seven'>7</button>
+			<button id='eight'>8</button>
+			<button id='nine'>9</button>
+			<button id='minus'>-</button>
+			<button id='four'>4</button>
+			<button id='five'>5</button>
+			<button id='six'>6</button>
+			<button id='plus'>+</button>
+			<button id='one'>1</button>
+			<button id='two'>2</button>
+			<button id='three'>3</button>
+			<button id='equals'>=</button>
+			<button id='modulus'>%</button>
+			<button id='zero'>0</button>
+			<button id='decimal'>.</button>
+
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
